@@ -1,0 +1,350 @@
+*{
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: 'Montserrat-Medium';
+    src: url('Montserrat-Medium.ttf')  format('truetype');
+}
+@font-face{
+    font-family: 'MonumentExtended';
+    src: url('MonumentExtended-Regular.otf')  format('opentype');
+}
+@font-face{
+    font-family: 'Montserrat-LightItalic';
+    src: url('Montserrat-LightItalic.ttf')  format('truetype');
+}
+
+
+body{
+    margin: 0;
+    font-family: 'Montserrat-Medium';
+    background-color: black;
+    background-image: url("https://cdn.monstercat.com/background-tile.webp");
+    background-attachment: scroll;
+    color: #f1f1f1;
+}
+.background-image{
+    background-image: url('https://cdx.monstercat.com?encoding=webp&url=https%3A%2F%2Fwww.monstercat.com%2Frelease%2FMCLP017%2Fcover%3F2ee434f2-4499-4c30-a937-4aec2b4ac1fc&width=1024');
+    height: 95%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* filter:  brightness(38%); */
+    justify-content: center;
+    
+}
+/* .nav{
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(10px) brightness(38%);
+    height: inherit;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 60px;
+} */
+.imageCat{
+    border: 1px solid #fff;
+    border-radius: 5px;
+    position: fixed;
+    left: 90px;
+    top: 40px;
+    display: inline;
+    cursor: pointer;
+}
+.nav{
+    display: inline;
+    float: right;
+    position: fixed;
+    top: 40px;
+    right: 90px;
+}
+.nav svg{
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    fill: #fff;
+    cursor: pointer;
+}
+.levelContainer{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+}
+.img-square{
+    width: 50%;
+    margin-right: 30px;
+}
+.levelText{
+    margin-left: 30px;
+}
+.levelText h1{
+    font-family: 'MonumentExtended';
+}
+.listenButton{
+    padding: 20px 40px;
+    background-color: #50A584;
+    color: #f1f1f1;
+    font-family: 'MonumentExtended';
+    font-size: 14px;
+    border: 1px solid #50A584;
+    cursor: pointer;
+}
+.shareButton{
+    padding: 20px 35px;
+    color: #f1f1f1;
+    font-family: 'MonumentExtended';
+    font-size: 14px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+.shareButton:hover{
+    background-color: #fff;
+    color: black;
+}
+.listenButton:hover{
+    background-color: #fff;
+    color: black;
+}
+.streamSongs{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.streamHeader{
+    font-family: 'MonumentExtended';
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-weight: 400;   
+}
+.streamMusic{
+    display: flex;
+    
+}
+.streamMusic svg{
+    width: 76px;
+    fill: #f1f1f1;
+    border: 1px solid #f1f1f1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+.trackButton{
+    font-family: 'MonumentExtended';
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-weight: 400;   
+
+}
+.listContainer{
+}
+.theList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.songs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shareTime{
+    display: flex;
+    align-items: center;
+}
+.videoMusic{
+    width: 100%;
+}
+.musicHeader{
+    font-size: 35px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    font-family: 'MonumentExtended';
+}
+.youtubeVideo{
+    margin-bottom: 100px;
+    width: 100%;
+    height: 500px;
+}footer{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: space-around;
+}
+footer div{
+    width: 30%;
+}
+footer a{
+    display: block;
+    color: #f1f1f1;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'MonumentExtended';
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.subFooter{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+.footerSvg{
+    display: flex;
+    flex-wrap: wrap;;
+}
+.footerSvg svg{
+    fill: #f1f1f1;
+    width: 20px;
+    margin-left: 17px;
+}
+.seconlast-para{
+    font-size: 11px;
+    font-family: 'Montserrat-LightItalic';
+    font-weight: 600;
+    text-align: center;
+}
+.lastPara{
+    font-size: 12px;
+    font-family: 'Montserrat-LightItalic';
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 90px;
+}
+nav{
+    display: none;
+}
+/* Responsivness */
+@media screen and (max-width: 1115px){
+    .imageCat{
+        display: none;
+    }
+    .nav{
+        display: none;
+    }
+    nav{
+        background-color: black;
+        width: 100%;
+        display: block;
+        position: fixed;
+        z-index: 100000px;
+    }
+    .nav-container{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: none;
+        align-items: center;
+        padding: 0.5rem 1rem;
+    }
+    .nav1 svg{
+        width: 17px;
+        margin-right: 20px;
+    }
+    nav svg{
+        width: 30px;
+        fill: #f1f1f1;
+    }
+    .levelContainer{
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .streamSongs{
+        width: 85%;
+    }
+    @media screen and (max-width: 992px){
+        .levelContainer{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .img-square{
+            margin-right: unset;
+            width: 100%;
+        }
+        .levelText{
+            margin-left: unset;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+    }
+    @media screen and (max-width: 768px){
+        .streamSongs{
+            width: 70%;
+        }
+        .levelContainer{
+            width: 70%;
+        }
+        footer{
+            flex-direction: column;
+        }
+        footer a{
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 1.4px;
+            line-height: 24.5px;
+            margin-bottom: 0px;
+        }
+        footer div{
+            width: 70%;
+        }
+        .lastMonstercat{
+            margin-top: 50px;
+        }
+        .subFooter{
+            flex-direction: column;
+        }
+        .levelText h1{
+            font-size: 22px;
+        }
+        .listenButton{
+            padding: 15px 25px;
+        }
+        .shareButton{
+            padding: 15px 25px;
+        }
+
+    }
+    @media screen and (max-width: 570px){
+        .streamMusic svg{
+            width: 90px;
+        }
+
+    }
+    
+    @media screen and (max-width: 532px){
+        .nav1{
+            display: none;
+        }
+        .streamSongs{
+            width: 90%;
+        }
+        .levelContainer{
+            width: 90%;
+        }
+        .streamHeader{
+            font-size: 22px;
+        }
+        .streamMusic svg {
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+
+}
